@@ -1,0 +1,28 @@
+
+section:nth-of-type(1) {
+
+    img:nth-of-type(1) {
+        max-width: 100%;
+        z-index: -1;
+    }
+
+    header {
+        img {
+            width: 200px;
+        }
+    }
+
+
+    .arrow-menu {
+        width: 20px;
+    }
+
+    .phone {
+        width: 20px;
+    }
+
+    .arrow {
+        width: 20px;
+    }
+
+}
