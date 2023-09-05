@@ -1,21 +1,109 @@
-
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (286px -> 410px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .section-category {
-    background-image: url('../../images/banner/imgbgcategory.jpg');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-color: red;
-    border: 2px solid blue;
-    
+
+    position: relative;
+    background-color: $color-darkbeige-transparent;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+
+    .banner {
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100vw;
+        // height: 100%;
+        z-index: -1; 
+    }
+
     h2 {
-        border: 2px solid green;
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        color: $color-darkbeige;
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        margin: 0;
+        font-family: 'Cinzel', serif;
+    }
+
+    h3 {
+        position: absolute;
+        top: 19px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80% ;
+
+        // border: 2px solid green;
+        text-transform: uppercase;
+        font-family: 'Cinzel', serif;
+        font-weight: 300;
+        font-size: .7rem;
+        text-align: center;
+    }
+    
+    h4 {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80% ;
+        font-size: .4rem;
+        font-weight: 300;
+        text-align: center;
 
     }
-    article {
 
-        .icon {
-            height: 20px;
+
+
+    .card-category {
+        display: grid;
+        grid-template-columns: repeat(6, 50px);
+        grid-template-rows: 60px;
+        grid-gap: 8px;
+        justify-content: center;
+        margin: 70px 0;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white-card;
+            
+            p {
+                font-size: .4rem;
+                font-weight: 300;
+            }
+
+            .icon {
+                width: 15px;
+            }
+    
+            .arrow {
+                width: 5px;
+            }
+
+            &:hover {
+                background-color: $color-light-gold;
+                color: $color-white-card;
+                .icon {
+                    filter: brightness(0) invert(1);
+                }
+                .arrow {
+                    filter: invert(100%);
+                }
+            }
+            
         }
+
         
     }
 }
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (410px -> px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

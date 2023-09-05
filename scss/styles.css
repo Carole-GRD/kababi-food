@@ -7,6 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300&display=swap%27");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -320,7 +321,7 @@ template {
   font-size: 0.3rem;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   margin: 0 5px;
@@ -331,7 +332,8 @@ template {
   background-image: url("../../images/slider/img_bg_slider_home01.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
-  color: #fff;
+  background-position: center;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 .section-home header {
@@ -346,29 +348,30 @@ template {
   justify-self: center;
 }
 .section-home h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 300;
   width: 10ch;
   text-transform: uppercase;
-  margin: 0 0 10px 35px;
-  padding-top: 30px;
+  margin: 0 0 5px 35px;
+  padding-top: 20px;
   font-family: "Cinzel", serif;
 }
 .section-home .best-quality-food {
   position: absolute;
-  top: 35px;
-  left: 100px;
+  top: 30px;
+  left: 90px;
   width: 35px;
   filter: invert(100%);
 }
 .section-home button {
-  border: 0.1rem solid #fff;
-  margin: 0 35px 10px;
+  border: 0.1rem solid #ffffff;
+  margin: 0 0 15px 35px;
 }
 .section-home button span {
   margin-left: 5px;
 }
 .section-home button span img {
-  height: 0.3rem;
+  height: 5px;
   filter: invert(100%);
 }
 
@@ -388,7 +391,7 @@ template {
   align-self: center;
 }
 .section-home header nav ul li .arrow-menu {
-  height: 0.3rem;
+  height: 5px;
   filter: invert(100%);
 }
 .section-home header nav ul li:hover {
@@ -401,12 +404,12 @@ template {
   align-items: center;
 }
 .section-home header div button .phone {
-  height: 0.3rem;
+  height: 5px;
   filter: invert(100%);
   transform: scaleX(-1);
 }
 .section-home header div button .arrow {
-  height: 0.3rem;
+  height: 5px;
   filter: invert(100%);
 }
 .section-home header div button:first-child span {
@@ -419,45 +422,139 @@ template {
   margin-left: 5px;
 }
 
-@media only screen and (min-width: 356px) {
-  .section-home header {
-    grid-template-columns: 17% 40% 43%;
-    font-size: 0.4rem;
-  }
-  .section-home header img {
-    height: 40%;
-  }
-  .section-home h1 {
-    padding-top: 40px;
-    font-size: 1.4rem;
-  }
-  .section-home .best-quality-food {
-    top: 40px;
-    left: 120px;
-    width: 40px;
-  }
-}
 @media only screen and (min-width: 410px) {
   .section-home header {
-    grid-template-columns: 20% 37% 43%;
+    grid-template-columns: 20% 40% 40%;
     font-size: 0.5rem;
   }
   .section-home header img {
     height: 50%;
   }
   .section-home h1 {
-    font-size: 1.4rem;
-    width: 10ch;
-    text-transform: uppercase;
-    margin: 0 0 10px 35px;
-    padding-top: 50px;
+    margin: 0 0 5px 45px;
+    padding-top: 40px;
+    font-size: 1.6rem;
   }
   .section-home .best-quality-food {
-    top: 45px;
-    left: 145px;
-    width: 47px;
+    top: 40px;
+    left: 140px;
+    width: 45px;
+  }
+  .section-home button {
+    margin: 0 0 20px 45px;
+    font-size: 0.4rem;
+  }
+  .section-home header nav ul {
+    grid-gap: 5px;
   }
 }
+.section-category {
+  position: relative;
+  background-color: rgba(245, 238, 227, 0.5568627451);
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+}
+.section-category .banner {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+.section-category h2 {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  color: #f5eee3;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin: 0;
+  font-family: "Cinzel", serif;
+}
+.section-category h3 {
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.section-category h4 {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  font-size: 0.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+.section-category .card-category {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: 60px;
+  grid-gap: 8px;
+  justify-content: center;
+  margin: 70px 0;
+}
+.section-category .card-category article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+}
+.section-category .card-category article p {
+  font-size: 0.4rem;
+  font-weight: 300;
+}
+.section-category .card-category article .icon {
+  width: 15px;
+}
+.section-category .card-category article .arrow {
+  width: 5px;
+}
+.section-category .card-category article:hover {
+  background-color: #c8a96a;
+  color: #fefefe;
+}
+.section-category .card-category article:hover .icon {
+  filter: brightness(0) invert(1);
+}
+.section-category .card-category article:hover .arrow {
+  filter: invert(100%);
+}
+
+.section-about {
+  position: relative;
+}
+.section-about .images-about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.section-about .images-about img:nth-of-type(1) {
+  position: relative;
+  top: 10px;
+  justify-self: flex-end;
+  width: 60px;
+}
+.section-about .images-about img:nth-of-type(2) {
+  position: relative;
+  top: -30px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+.section-about .images-about img:nth-of-type(3) {
+  position: relative;
+  top: 10px;
+  justify-self: flex-start;
+  width: 60px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 100vw;

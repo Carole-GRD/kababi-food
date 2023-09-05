@@ -1,11 +1,12 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                   SMARTPHONES (-> 356px)
+//                   SMARTPHONES (286px -> 410px)
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .section-home {
     background-image: url('../../images/slider/img_bg_slider_home01.jpg');
     background-size: 100vw;
     background-repeat: no-repeat;
+    background-position: center;
     color: $color-white;
     font-family: 'Roboto', sans-serif;
 
@@ -23,18 +24,19 @@
     }
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: 300;
         width: 10ch;
         text-transform: uppercase;
-        margin: 0 0 10px 35px;
-        padding-top: 30px;
+        margin: 0 0 5px 35px;
+        padding-top: 20px;
         font-family: 'Cinzel', serif;
     }
 
     .best-quality-food {
         position: absolute;
-        top: 35px;
-        left: 100px;
+        top: 30px;
+        left: 90px;
         width: 35px;
         filter: invert(100%);
     }
@@ -42,12 +44,12 @@
     button {
         @extend %buttonform; 
         border: .1rem solid $color-white;
-        margin: 0 35px 10px;
+        margin: 0 0 15px 35px;
 
         span {
             margin-left: 5px;
             img {
-                height: 10px;
+                height: 5px;
                 filter: invert(100%);
             }
         }
@@ -70,7 +72,7 @@
             align-self: center;
             
             .arrow-menu {
-                height: 10px;
+                height: 5px;
                 filter: invert(100%);
             }
         }
@@ -90,12 +92,12 @@
         @extend %buttonform; 
 
         .phone {
-            height: 10px;
+            height: 5px;
             filter: invert(100%);
             transform: scaleX(-1);
         }
         .arrow {
-            height: 10px;
+            height: 5px;
             filter: invert(100%);
         }
     }
@@ -107,7 +109,7 @@
     }
 
     button:last-child {
-        background-color: $lightgold;
+        background-color: $color-light-gold;
         span {
             margin-left: 5px;
         }
@@ -116,30 +118,42 @@
 
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                   SMARTPHONES (356px -> 410px)
+//                   SMARTPHONES (410px -> px)
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media only screen and (min-width: 356px) {
+@media only screen and (min-width: 410px) {
     .section-home {
     
         header {
-            grid-template-columns: 17% 40% 43%;
-            font-size: .4rem;
+            grid-template-columns: 20% 40% 40%;
+            font-size: .5rem;
 
             img {
-                height: 40%;
+                height: 50%;
             }
         }
     
         h1 {
-            padding-top: 35px;
-            font-size: 1.4rem;
+            margin: 0 0 5px 45px;
+            padding-top: 40px;
+            font-size: 1.6rem;
         }
     
         .best-quality-food {
             top: 40px;
-            left: 120px;
-            width: 40px;
+            left: 140px;
+            width: 45px;
+        }
+
+        button {
+            margin: 0 0 20px 45px;
+            font-size: .4rem;
+        }
+    }
+
+    .section-home header nav {
+        ul {
+            grid-gap: 5px;
         }
     }
 }
