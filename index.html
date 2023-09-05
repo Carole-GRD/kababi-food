@@ -4,71 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kababi food</title>
-    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
 </head>
 <body>
-    <!-- SECTION 1 -->
-    <section>
-        <img src="./images/slider/img_bg_slider_home01.jpg" alt="Photo des oeufs sur le plats">
-        <header>
-            <img src="./images/logo/logo2@2x.png" alt="Logo Kababi">
-            <nav>
-                <ul>
-                    <li>
-                        Home
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Page
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        Shop
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
-            </nav>
-            <div>
+    <div class="grid-container">
+        <!-- SECTION 1 -->
+        <section class="section-home">
+            <header>
+                <img src="./images/logo/logo2@2x.png" alt="Logo Kababi">
+                <nav>
+                    <ul>
+                        <li>
+                            Home
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            About
+                        </li>
+                        <li>
+                            Page
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            Shop
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+                    </ul>
+                </nav>
                 <div>
                     <button>
-                        <img src="./images/other/telephone.png" alt="Téléphone" class="phone">
+                        <span>
+                            <img src="./images/other/telephone.png" alt="Téléphone" class="phone">
+                        </span>
                         +012(345)6789
                     </button>
+                    <button>
+                        Book a table
+                        <span>
+                            <img src="./images/other/arrow.png" alt="Flèche vers réservations" class="arrow">
+                        </span>
+                    </button>
                 </div>
-                <button>
-                    Book a table
-                    <img src="./images/other/arrow.png" alt="Flèche vers réservations" class="arrow">
-                </button>
-            </div>
-        </header>
-        <h1>Best quality foods</h1>
-        <img src="./images/about-us/iconbgabout.png" alt="Best quality foods">
-        <button>
-            Explore our menu
-            <img src="./images/other/arrow.png" alt="Flèche vers menu" class="arrow">
-        </button>
-    </section>
+            </header>
+            <h1>Best quality foods</h1>
+            <img src="./images/about-us/iconbgabout.png" alt="Best quality foods" class="best-quality-food">
+            <button>
+                Explore our menu
+                <span>
+                    <img src="./images/other/arrow.png" alt="Flèche vers menu">
+                </span>
+            </button>
+        </section>
 
-    <!-- SECTION 2 -->
-    <section>
-        <h2>Choose your best category</h2>       
-    </section>
+        <!-- SECTION 2 -->
+        <section class="section-category">
+            <h2>Choose your best category</h2> 
+            <span>Category</span>
+            <h3>Best foods for you & family</h3>    
+            <article>
+                <img src="./images/icons/001-cheeseburger.png" alt="Cheesburger" class="icon">
+                <h4>Cheesburger</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+            <article>
+                <img src="./images/icons/002-pizza.png" alt="Pizza" class="icon">
+                <h4>Pizza Slice</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+            <article>
+                <img src="./images/icons/003-coffee.png" alt="Coffee" class="icon">
+                <h4>Coffee-Cup</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+            <article>
+                <img src="./images/icons//004-chicken-leg.png" alt="Chicken" class="icon">
+                <h4>Chicken-Leg</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+            <article>
+                <img src="./images/icons/005-cocktail.png" alt="Cocktail" class="icon">
+                <h4>Energy Drink</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+            <article>
+                <img src="./images/icons/006-marin.png" alt="Marin" class="icon">
+                <h4>Shrimp</h4>
+                <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+            </article>
+        </section>
 
-    <!-- SECTION 3 -->
-    <section>
-        <h2>Why choose us</h2>
-    </section>
+        <!-- SECTION 3 -->
+        <section>
+            <h2>Why choose us</h2>
+        </section>
 
-    <!-- SECTION 4 -->
-    <section>
-        <h2>Try our special</h2>
-    </section>
+        <!-- SECTION 4 -->
+        <section>
+            <h2>Try our special</h2>
+        </section>
 
 
 
@@ -147,6 +183,7 @@ et les placer dans div comme video ytb dans la div footer-bottom-->
 
 
         </footer>
+    </div>
 
 </body>
 </html>

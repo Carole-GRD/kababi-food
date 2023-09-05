@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
 */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap%27");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -315,19 +316,150 @@ template {
   display: none;
 }
 
-section:nth-of-type(1) img:nth-of-type(1) {
-  max-width: 100%;
-  z-index: -1;
+.section-home header div button, .section-home button {
+  font-size: 0.3rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
 }
-section:nth-of-type(1) header img {
-  width: 200px;
+
+.section-home {
+  background-image: url("../../images/slider/img_bg_slider_home01.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
-section:nth-of-type(1) .arrow-menu {
-  width: 20px;
+.section-home header {
+  display: grid;
+  grid-template-columns: 15% 40% 45%;
+  font-size: 0.3rem;
+  height: 25px;
 }
-section:nth-of-type(1) .phone {
-  width: 20px;
+.section-home header img {
+  height: 35%;
+  align-self: center;
+  justify-self: center;
 }
-section:nth-of-type(1) .arrow {
-  width: 20px;
+.section-home h1 {
+  font-size: 1.2rem;
+  width: 10ch;
+  text-transform: uppercase;
+  margin: 0 0 10px 35px;
+  padding-top: 30px;
+  font-family: "Cinzel", serif;
+}
+.section-home .best-quality-food {
+  position: absolute;
+  top: 35px;
+  left: 100px;
+  width: 35px;
+  filter: invert(100%);
+}
+.section-home button {
+  border: 0.1rem solid #fff;
+  margin: 0 35px 10px;
+}
+.section-home button span {
+  margin-left: 5px;
+}
+.section-home button span img {
+  height: 0.3rem;
+  filter: invert(100%);
+}
+
+.section-home header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-home header nav ul {
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+.section-home header nav ul li {
+  list-style-type: none;
+  align-self: center;
+}
+.section-home header nav ul li .arrow-menu {
+  height: 0.3rem;
+  filter: invert(100%);
+}
+.section-home header nav ul li:hover {
+  color: #c8a96a;
+}
+
+.section-home header div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-home header div button .phone {
+  height: 0.3rem;
+  filter: invert(100%);
+  transform: scaleX(-1);
+}
+.section-home header div button .arrow {
+  height: 0.3rem;
+  filter: invert(100%);
+}
+.section-home header div button:first-child span {
+  margin-right: 5px;
+}
+.section-home header div button:last-child {
+  background-color: #c8a96a;
+}
+.section-home header div button:last-child span {
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 356px) {
+  .section-home header {
+    grid-template-columns: 17% 40% 43%;
+    font-size: 0.4rem;
+  }
+  .section-home header img {
+    height: 40%;
+  }
+  .section-home h1 {
+    padding-top: 40px;
+    font-size: 1.4rem;
+  }
+  .section-home .best-quality-food {
+    top: 40px;
+    left: 120px;
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 410px) {
+  .section-home header {
+    grid-template-columns: 20% 37% 43%;
+    font-size: 0.5rem;
+  }
+  .section-home header img {
+    height: 50%;
+  }
+  .section-home h1 {
+    font-size: 1.4rem;
+    width: 10ch;
+    text-transform: uppercase;
+    margin: 0 0 10px 35px;
+    padding-top: 50px;
+  }
+  .section-home .best-quality-food {
+    top: 45px;
+    left: 145px;
+    width: 47px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(8, auto);
 }/*# sourceMappingURL=styles.css.map */
