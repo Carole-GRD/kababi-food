@@ -1,5 +1,5 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                   SMARTPHONES (286px -> 410px)
+//                   SMARTPHONES (350px -> 410px)
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .section-home {
@@ -12,31 +12,32 @@
 
     header {
         display: grid;
-        grid-template-columns: 15% 40% 45%;
+        grid-template-columns: 18% 37% 45%;
         font-size: .3rem;
         height: 25px;
     
         img {
-            height: 35%;
+            // height: 35%;
+            width: 70%;
             align-self: center;
             justify-self: center;
         }
     }
 
     h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 300;
         width: 10ch;
         text-transform: uppercase;
-        margin: 0 0 5px 35px;
+        margin: 0 0 2% 15%;
         padding-top: 20px;
         font-family: 'Cinzel', serif;
     }
 
     .best-quality-food {
         position: absolute;
-        top: 30px;
-        left: 90px;
+        top: 5%;
+        left: 33%;
         width: 35px;
         filter: invert(100%);
     }
@@ -44,12 +45,14 @@
     button {
         @extend %buttonform; 
         border: .1rem solid $color-white;
-        margin: 0 0 15px 35px;
+        margin: 0 0 5% 15%;
 
         span {
             margin-left: 5px;
             img {
-                height: 5px;
+                
+                // height: 8px;
+                width: 6px;
                 filter: invert(100%);
             }
         }
@@ -65,14 +68,15 @@
         padding: 0;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(5, 20%);
+        grid-template-columns: repeat(5, 18%);
 
         li {
             list-style-type: none; 
             align-self: center;
+            cursor: pointer;
             
             .arrow-menu {
-                height: 5px;
+                width: 20%;
                 filter: invert(100%);
             }
         }
@@ -90,9 +94,10 @@
 
     button {
         @extend %buttonform; 
+        cursor: pointer;
 
         .phone {
-            height: 5px;
+            width: 6px;
             filter: invert(100%);
             transform: scaleX(-1);
         }
