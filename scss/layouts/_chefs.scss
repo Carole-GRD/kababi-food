@@ -2,9 +2,9 @@
 body{
     section{ .section-chefs { 
         position:relative;
-        background-image: url("kababi-food/images/team-chef/imgbg-ourchefs.jpg");
-        background-position: center;
-        
+        background-image: url("kababi-food/images/team-chef/imgbg-ourchefs.jpg") center/cover;
+        min-height: 100vh;
+
 
         
     
