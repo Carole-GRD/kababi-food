@@ -16,5 +16,12 @@
 @import "layouts/__layouts-dir";
 
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(8, auto);
+}
+
+
 
 

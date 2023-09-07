@@ -4,71 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kababi food</title>
-    <link rel="stylesheet" href="scss/styles.css">
-  </head>
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+</head>
+
 <body>
-    <!-- SECTION 1 -->
-    <section>
-        <img src="./images/slider/img_bg_slider_home01.jpg" alt="Photo des oeufs sur le plats">
-        <header>
-            <img src="./images/logo/logo2@2x.png" alt="Logo Kababi">
-            <nav>
-                <ul>
-                    <li>
-                        Home
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Page
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        Shop
-                        <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
-            </nav>
-            <div>
+    <div class="grid-container">
+        <!-- SECTION 1 -->
+        <section class="section-home">
+            <header>
+                <img src="./images/logo/logo.png" alt="Logo Kababi">
+                <nav>
+                    <ul>
+                        <li>
+                            Home
+                            <!-- <div class="mask1"></div> -->
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            About
+                        </li>
+                        <li>
+                            Page
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            Shop
+                            <img src="./images/other/arrow2.png" alt="Flèche vers sous-menu" class="arrow-menu">
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+                    </ul>
+                </nav>
                 <div>
                     <button>
-                        <img src="./images/other/telephone.png" alt="Téléphone" class="phone">
+                        <span>
+                            <img src="./images/other/telephone.png" alt="Téléphone" class="phone">
+                        </span>
                         +012(345)6789
                     </button>
+                    <button>
+                        Book a table
+                        <span>
+                            <img src="./images/other/arrow.png" alt="Flèche vers réservations" class="arrow">
+                        </span>
+                    </button>
                 </div>
-                <button>
-                    Book a table
-                    <img src="./images/other/arrow.png" alt="Flèche vers réservations" class="arrow">
-                </button>
+            </header>
+            <h1>Best quality foods</h1>
+            <img src="./images/slider/img_bg2.png" alt="Best quality foods" class="best-quality-food">
+            <button>
+                Explore our menu
+                <span>
+                    <img src="./images/other/arrow.png" alt="Flèche vers menu">
+                </span>
+            </button>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="section-category">
+            <img src="./images/banner/imgbgcategory.jpg" alt="Banner" class="banner">
+            <h2>Category</h2> 
+            <div class="container-title">
+                <h3>Choose your best category</h3> 
+                <h4>Best foods for you & family</h4>
             </div>
-        </header>
-        <h1>Best quality foods</h1>
-        <img src="./images/about-us/iconbgabout.png" alt="Best quality foods">
-        <button>
-            Explore our menu
-            <img src="./images/other/arrow.png" alt="Flèche vers menu" class="arrow">
-        </button>
-    </section>
+            <div class="card-category">
+                <article>
+                    <img src="./images/icons/001-cheeseburger.png" alt="Cheesburger" class="icon">
+                    <h5>Cheesburger</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+                <article>
+                    <img src="./images/icons/002-pizza.png" alt="Pizza" class="icon">
+                    <h5>Pizza Slice</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+                <article>
+                    <img src="./images/icons/003-coffee.png" alt="Coffee" class="icon">
+                    <h5>Coffee-Cup</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+                <article>
+                    <img src="./images/icons//004-chicken-leg.png" alt="Chicken" class="icon">
+                    <h5>Chicken-Leg</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+                <article>
+                    <img src="./images/icons/005-cocktail.png" alt="Cocktail" class="icon">
+                    <h5>Energy Drink</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+                <article>
+                    <img src="./images/icons/006-marin.png" alt="Marin" class="icon">
+                    <h5>Shrimp</h5>
+                    <img src="./images/other/arrow.png" alt="Flèche" class="arrow">
+                </article>
+            </div>   
+        </section>
 
-    <!-- SECTION 2 -->
-    <section>
-        <h3>Choose your best category</h3>       
-    </section>
+        <!-- SECTION 3 -->
+        <section class="section-about">
+            <div class="images-about">
+                <img src="./images/gallery/imgfood1.png" alt="Crêpes">
+                <img src="./images/gallery/imgfood2.jpg" alt="Salade">
+                <img src="./images/gallery/imgfood3.png" alt="Oeufs">
+            </div>
+            <h2>About us</h2> 
+            <div class="container-title">
+                <h3>Why choose us</h3> 
+                <h4>Best foods for you & family</h4>
+            </div>
+            <img src="./images/about-us/iconbgabout.png" alt="Best quality foods" class="best-quality-food">
+            <div class="content-about">
+                <img src="./images/about-us/img_aboutus_home1.jpg" alt="Photo">
+                <div class="txt-about">
+                    <p>Sed ut persipiciatis unde omnis iste natus error sit voluptatem accusatium doloremque laudantium totam apeam eaque ipsa quae abillo invtore verittis et quasi architecto beatae dicta sunt explicabo. Nemo enim ipsam voluptatem quiluptas.</p>
+                    <button>
+                        Discover more
+                        <span>
+                            <img src="./images/other/arrow.png" alt="Flèche vers réservations" class="arrow">
+                        </span>
+                    </button>
+                </div>
+            </div class="content-about">
+        </section>
 
-    <!-- SECTION 3 -->
-    <section>
-        <h3>Why choose us</h3>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section>
-        <h3>Try our special</h3>
-    </section>
+        <!-- SECTION 4 -->
+        <section class="section-menu">
+            <div class="images-menu">
+                <img src="./images/our-menu/img2bg-our-menu.jpg" alt="Viange">
+                <img src="./images/our-menu/imgbg-our-menu.jpg" alt="Pain">
+            </div>
+            <h2>Our menu</h2> 
+            <div class="container-title">
+                <h3>Try our special offer</h3> 
+                <h4>Best foods for you & family</h4>
+            </div>
+            <div class="card-menu">
+                <article>
+                    <div class="detail-menu">
+                        <h5>Raw Scallops From Erquy</h5>
+                        <p>Candied Jerusalem artichokes, truffle</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Celeriac and Truffle Ravioli</h5>
+                        <p>Roasted langoustine, consommé</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Cod Filet Cooked on One Side</h5>
+                        <p>Chorizo, chickpea espuma, pequillos</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Sea Bass Ceviche</h5>
+                        <p>Avocado, butternut, lime</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Corrèze Pan-seared Veal Liver</h5>
+                        <p>Olive oil mashed potato, onion jus</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Grilled Veal Filet Mignon</h5>
+                        <p>Pumpkin, endives with hazelnuts</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Tender Octopus and Fennel</h5>
+                        <p>Citrus, wild rocket condiment</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                <article>
+                    <div class="detail-menu">
+                        <h5>Viennese Veal Cutlet</h5>
+                        <p>Ricotta and spinach gnocchi, Caccio de Pepe</p>
+                    </div>
+                    <p class="price">$89</p>
+                </article>
+                
+            </div>
+        </section>
 
 
 
@@ -202,16 +334,39 @@
                     </div>
                 </div>
 
-                <div class="bloc-footer-services">
-                    <div class="list">
-                        <h3>Contact</h3>
-                            <ul>
-                                <li><a href="#"><img class="Position" src="images/icons/placeholder.png"/>Main Street, D-Block, 2nd Floor,<br>Melbourne, Australia</a></li>
-                                <li><a href="#"><img class="Mail" src="images/icons/email.png"/>support@gmail.com</a></li>
-                                <li><a href="#"><img class="phonecall" src="images/icons/phone-call.png"/>+012(345)67 899</a></li>
-                                <li><a href="#"><img class="open" src="images/icons/clock.png"/>08 am - 06 pm</a></li>
-                            </ul>
-                    </div>
+                <div class="bloc footer-services">
+                    <h3>Facilities</h3>
+                    <ul class="Services-facilities">
+                        <li><a href="#">The Fontus Spa</a></li>
+                        <li><a href="#">Excperiences</a></li>
+                        <li><a href="#">Private Functions</a></li>
+                        <li><a href="#">Gallery, Events</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+
+                <div class="bloc footer-services">
+                    <h3>Newsletters</h3>
+                    <ul class="Services-newsletters">
+                        <li><a href="#"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></a></li>
+                            <input type="email" placeholder="Enter Email Adress">
+                            <buton type="submit">></buton>
+                        </form>
+                        <li><a href="#">Excperiences</a></li>
+                        <li><a href="#">Private Functions</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="bloc footer-services">
+                    <h3>Contact</h3>
+                    <ul class="Services-contact">
+                        <li><a href="#">56 Main Street, D-Block, 2nd Floor,<br>Melbourne, Australia</a></li>
+                        <li><a href="#">support@gmail.com</a></li>
+                        <li><a href="#">+012(345)67 899</a></li>
+                        <li><a href="#">08 am - 06 pm</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
                 </div>
 
 <!--footer-bottom: ne pas oublier de rechercher les images 
@@ -228,13 +383,8 @@ pour les réseaux sociaux : fb tw insta ink-->
                             </div>
                     </div>
                 </div>
-
-
-
-
-
-
-    </footer>
+        </footer>
+    </div>
 
 </body>
 </html>
