@@ -7,44 +7,31 @@
     background-color: $color-lightbeige-transparent;
     background-position: center;
     font-family: 'Roboto', sans-serif;
-    min-height: 60vh;
-    height: 90vh;
+    min-height: 65vh;
 
     .images-menu {
         display: none;
-        // img:first-child {
-        //     position: absolute;
-        //     bottom: -10vh;
-        //     width: 25vw;
-        // }
-        // img:last-child {
-        //     position: absolute;
-        //     left: 73vw;
-        //     height: 100%;
-        // }
     }
 
     h2 {
+        display: none;
         @extend %h2form;
-        top: 5%
     }
 
     .container-title {
         @extend %containertitle;
         h3 {
             @extend %h3form;
-            top: 5%
         }
     
         h4 {
             @extend %h4form;
-            top: 8.5%;
         }
     }
 
     .card-menu {
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 50%;
         transform: translateX(-50%);
         display: grid;
@@ -85,12 +72,8 @@
             &:hover {
                 border: 2px $color-light-gold dashed;
             }
-
         }
     }    
-
-
-
 }
 
 
@@ -100,18 +83,133 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 410px) {
+    .section-menu {
+        height: 80vh;
 
+        .container-title {
+            h3 {
+                top: 5%;
+                font-size: 1rem;
+            }
+        
+            h4 {
+                top: 8.5%;
+                font-size: .7rem;
+            }
+        }
+
+        .card-menu {
+            font-size: .7rem;
+            width: 60%;
+
+            article {
+                grid-template-columns: 80% 20%;
+                align-items: center;
+                border-radius: 3px;
+                padding: 4% 0;
+
+                .detail-menu {
+                    padding: 0% 10%;
+                    h5 {
+                        margin: 0 0 3% 0;
+                        font-size: .6rem;
+                        font-weight: 500;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: .5rem;
+                        font-weight: 500;
+                    }
+                }
+                .price {
+                    justify-self: center;
+                    color: $color-light-gold;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+
+                &:hover {
+                    border: 2px $color-light-gold dashed;
+                }
+            }
+        }    
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //                   TABLETTES (576px -> 768px)
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-// AJOUTER LES TITRES H2 DISPLAY BLOCK 
 @media only screen and (min-width: 576px) {
+    .section-menu {
+        height: 120vh;
+        .images-menu {
+            display: block;
+            img:first-child {
+                position: absolute;
+                bottom: -10vh;
+                width: 25vw;
+            }
+            img:last-child {
+                position: absolute;
+                left: 73vw;
+                height: 100%;
+            }
+        }
 
+        h2 {
+            display: block;
+            position: absolute;
+            top: 5vh;
+            font-size: 5rem;
+        }
 
+        .container-title {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            h3 {
+                font-size: 1.5rem;
+                top: 5%
+            }
+        
+            h4 {
+                font-size: .7rem;
+                top: 8.5%;
+            }
+        }
+
+        .card-menu {
+            position: absolute;
+            top: 20vh;
+            article {
+                .detail-menu {
+                    padding: 0% 10%;
+                    h5 {
+                        margin: 0 0 3% 0;
+                        font-size: .9rem;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: .5rem;
+                    }
+                }
+                .price {
+                    justify-self: center;
+                    color: $color-light-gold;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+
+                &:hover {
+                    border: 2px $color-light-gold dashed;
+                }
+            }
+        }    
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -119,9 +217,72 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 768px) {
+    .section-menu {
 
+        .images-menu {
+            display: block;
+            img:first-child {
+                position: absolute;
+                bottom: -10vh;
+                width: 25vw;
+            }
+            img:last-child {
+                position: absolute;
+                // left: 73vw;
+                height: 50%;
+            }
+        }
 
-    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 5%
+        }
+
+        .container-title {
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            h3 {
+                font-size: 1.7rem;
+                top: 5%
+            }
+        
+            h4 {
+                font-size: .8rem;
+                top: 8.5%;
+            }
+        }
+
+        .card-menu {
+
+            article {
+                .detail-menu {
+                    padding: 0% 10%;
+                    h5 {
+                        margin: 0 0 3% 0;
+                        font-size: .7rem;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: .5rem;
+                    }
+                }
+                .price {
+                    justify-self: center;
+                    color: $color-light-gold;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    margin: 0;
+                }
+
+                &:hover {
+                    border: 2px $color-light-gold dashed;
+                }
+            }
+        }    
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -138,7 +299,68 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 1200px) {
+    .section-menu {
 
+        .images-menu {
+            display: block;
+            img:first-child {
+                position: absolute;
+                bottom: -20vh;
+                width: 20vw;
+            }
+            img:last-child {
+                position: absolute;
+                left: 73vw;
+                height: 100%;
+            }
+        }
+
+        h2 {
+            display: block;
+            position: absolute;
+            top: 5%
+        }
+
+        .container-title {
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            h3 {
+                font-size: 1.7rem;
+                top: 5%
+            }
+        
+            h4 {
+                font-size: .8rem;
+                top: 8.5%;
+            }
+        }
+
+        .card-menu {
+            position: absolute;
+            top: 30vh;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2vw;
+            width: 70%;
+            article {
+                .detail-menu {
+                    padding: 0% 10%;
+                    h5 {
+                        margin: 0 0 3% 0;
+                        font-size: 1rem;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: .7rem;
+                    }
+                }
+                .price {
+                    font-size: 2rem;
+                }
+            }
+        }    
+    }
 
 }
 
