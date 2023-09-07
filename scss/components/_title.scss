@@ -1,0 +1,35 @@
+%h2form {
+    position: absolute;
+    // top: 20px;
+    left: 5px;
+    color: $color-darkbeige;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+%h3form {
+    position: absolute;
+    // top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80% ;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    font-size: .7rem;
+    text-align: center;
+}
+
+%h4form {
+    position: absolute;
+    // top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80% ;
+    font-size: .4rem;
+    font-weight: 300;
+    text-align: center;
+}

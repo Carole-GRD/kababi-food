@@ -1,0 +1,44 @@
+@media screen and (max-width: 410px) {
+body{
+    section{ .section-chefs { 
+        position:relative;
+        background-image: url("kababi-food/images/team-chef/imgbg-ourchefs.jpg");
+        background-position: center;
+        
+
+        
+    
+
+
+    }}
+ }}
+
+
+//mobile-minimum//
+@media screen and (min-width: 410px) and (max-width:576px){
+    { }
+
+}   
+//minimum-tablet//
+@media screen and (min-width: 576px) and (max-width:1024px){
+
+    { }
+} 
+
+//tablet-laptop//
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+    { }
+} 
+
+//laptop-desktop//
+@media screen and (min-width: 1024px) and (max-width:1600px){
+    { }
+
+} 
+
+// desktop//
+@media screen and (min-width:1600px){
+    { }
+
+} 
