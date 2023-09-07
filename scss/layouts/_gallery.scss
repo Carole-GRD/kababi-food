@@ -1,13 +1,14 @@
 //mobile//
 @media screen and (max-width: 410px) {
     body {
-        section { .gallery {
+        section .gallery {
             position:relative;
             background-color: $color-lightbeige-transparent;
             background-position: center;
             font-family:'Cinzel', serif;
 
-            h2 { @extend %h2form;
+            h2 { 
+                // @extend %h2form;
                 top: 20px;
                 //position: absolute;
                 //left: 5px;
@@ -18,21 +19,23 @@
                 //margin: 0;
                 //font-family: 'Cinzel', serif;
             }
-            h3 {@extend %h3form {
-                    top: 19px;
-                    //position: absolute;
-                    //top: 19px;
-                    //left: 50%;
-                    //transform: translateX(-50%);
-                    //width: 80% ;
-                    //text-transform: uppercase;
-                    //font-family: 'Cinzel', serif;
-                    //font-weight: 300;
-                    //font-size: .7rem;
-                    //text-align: center;
-                }
+            h3 {
+                // @extend %h3form;
+                top: 19px;
+                //position: absolute;
+                //top: 19px;
+                //left: 50%;
+                //transform: translateX(-50%);
+                //width: 80% ;
+                //text-transform: uppercase;
+                //font-family: 'Cinzel', serif;
+                //font-weight: 300;
+                //font-size: .7rem;
+                //text-align: center;
             }
-            h4{%h4form {
+            
+            h4 {
+                // @extend %h4form;
                 top: 40px;
                 //position: absolute;
                 //left: 50%;
@@ -42,7 +45,7 @@
                 //font-weight: 300;
                 //text-align: center;
             }
-            .box{ .grid1
+
         }
     }
 }

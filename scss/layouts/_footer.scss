@@ -4,7 +4,7 @@
             justify-content: space-between;
             font-family: 'cinzel', serif;
             font-family: 'roboto', sans-serif;
-            display: :flex;
+            display: flex;
             flex-direction: column;
         }
 
@@ -19,7 +19,8 @@
             
 // exemple : @include box-shadow($color-blue-1);
 
-                .list h3 { @extend %h3form {
+                .list h3 { 
+                    @extend %h3form;
                     top: 19px;
                     color:$color-white;
                     //position: absolute;
@@ -33,7 +34,7 @@
                     //font-size: .7rem;
                     //text-align: center;
                 }
-            }
+           
             .list ul {
                 list-style: none;
                 padding: 0;
@@ -51,10 +52,10 @@
         color:$color-darkgold;
         color:$color-white;
     }
-    .footer-bottom { 
-.copyright{
-}
-    }
+    // .footer-bottom { 
+    //     .copyright{
+    //     }
+    // }
         .card-area {
             .facebook { 
             position: absolute;
@@ -82,22 +83,19 @@
 
 
 
-{
-    }
-        }
+
+    
         @media screen and (max-width: 410px) {
             //com interieur footer  
             // position: relative; 
             //display: ; 
             //flex-wrap:nowrap; 
             //padding: 50px; //
-        
+        }
 
 
 @media screen and (max-width: 410px) {
-    { }
-          
-    }
+}
     
     
     //mobile-minimum//
