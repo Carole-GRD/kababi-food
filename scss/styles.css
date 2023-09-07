@@ -362,7 +362,8 @@ template {
 }
 
 .section-home {
-  background-image: url("../../images/slider/img_bg_slider_home01.jpg");
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url("../../images/slider/img_bg_slider_home01.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
@@ -371,17 +372,17 @@ template {
 }
 .section-home header {
   display: grid;
-  grid-template-columns: 18% 37% 45%;
+  grid-template-columns: 20% 40% 40%;
   font-size: 0.3rem;
-  height: 25px;
+  height: 5vh;
 }
 .section-home header img {
-  width: 70%;
+  height: 2vh;
   align-self: center;
   justify-self: center;
 }
 .section-home h1 {
-  font-size: 1.2rem;
+  font-size: 5vmin;
   font-weight: 300;
   width: 10ch;
   text-transform: uppercase;
@@ -391,10 +392,9 @@ template {
 }
 .section-home .best-quality-food {
   position: absolute;
-  top: 5%;
+  top: 20%;
   left: 33%;
   width: 35px;
-  filter: invert(100%);
 }
 .section-home button {
   border: 0.1rem solid #ffffff;
@@ -425,7 +425,7 @@ template {
   cursor: pointer;
 }
 .section-home header nav ul li .arrow-menu {
-  width: 20%;
+  height: 5px;
   filter: invert(100%);
 }
 .section-home header nav ul li:hover {
@@ -434,20 +434,27 @@ template {
 
 .section-home header div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  padding-right: 5%;
 }
 .section-home header div button {
   cursor: pointer;
+  width: 100%;
+  margin: 0;
+  font-size: 0.3rem;
 }
 .section-home header div button .phone {
-  width: 6px;
+  height: 5px;
   filter: invert(100%);
   transform: scaleX(-1);
 }
 .section-home header div button .arrow {
   height: 5px;
   filter: invert(100%);
+}
+.section-home header div button:first-child {
+  padding: 0;
 }
 .section-home header div button:first-child span {
   margin-right: 5px;
@@ -461,42 +468,287 @@ template {
 
 @media only screen and (min-width: 410px) {
   .section-home header {
-    grid-template-columns: 20% 40% 40%;
-    font-size: 0.5rem;
+    grid-template-columns: 20% 38% 42%;
   }
   .section-home header img {
-    height: 50%;
+    height: 2.5vh;
   }
-  .section-home h1 {
-    margin: 0 0 5px 45px;
-    padding-top: 40px;
-    font-size: 1.6rem;
+  .section-home header h1 {
+    margin: 0 0 2% 15%;
   }
-  .section-home .best-quality-food {
-    top: 40px;
-    left: 140px;
+  .section-home header .best-quality-food {
+    top: 15%;
+    left: 35%;
     width: 45px;
   }
+  .section-home header button {
+    font-size: 0.5rem;
+  }
+  .section-home header button span img {
+    width: 7px;
+  }
+  .section-home .section-home header nav ul {
+    grid-template-columns: repeat(5, 20%);
+  }
+  .section-home .section-home header nav ul li {
+    font-size: 0.5rem;
+  }
+  .section-home .section-home header nav ul li .arrow-menu {
+    height: 7px;
+  }
+  .section-home .section-home header div {
+    padding-right: 0;
+  }
+  .section-home .section-home header div button {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.5rem;
+  }
+  .section-home .section-home header div button .phone {
+    height: 7px;
+  }
+  .section-home .section-home header div button .arrow {
+    height: 7px;
+  }
+  .section-home .section-home header div button:first-child {
+    margin-right: 3%;
+  }
+  .section-home .section-home header div button:last-child {
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .section-home header {
+    grid-template-columns: 20% 38% 42%;
+    height: 8vh;
+  }
+  .section-home header img {
+    height: 3.5vh;
+  }
+  .section-home h1 {
+    margin: 3% 0 2% 15%;
+  }
+  .section-home .best-quality-food {
+    top: 20%;
+    left: 35%;
+    width: 55px;
+  }
   .section-home button {
-    margin: 0 0 20px 45px;
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
   .section-home header nav ul {
-    grid-gap: 5px;
+    grid-template-columns: repeat(5, 20%);
+  }
+  .section-home header nav ul li {
+    font-size: 0.7rem;
+  }
+  .section-home header nav ul li .arrow-menu {
+    height: 7px;
+  }
+  .section-home header div {
+    padding-right: 0;
+  }
+  .section-home header div button {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.6rem;
+  }
+  .section-home header div button .phone {
+    height: 7px;
+  }
+  .section-home header div button .arrow {
+    height: 7px;
+  }
+  .section-home header div button:first-child {
+    margin-right: 3%;
+  }
+  .section-home header div button:first-child span {
+    margin-right: 5px;
+  }
+  .section-home header div button:last-child {
+    margin-left: 3%;
+    background-color: #c8a96a;
+  }
+  .section-home header div button:last-child span {
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-home header {
+    height: 10vh;
+  }
+  .section-home header img {
+    height: 4vh;
+  }
+  .section-home h1 {
+    font-size: 6vmin;
+    margin: 3% 0 3% 15%;
+  }
+  .section-home .best-quality-food {
+    left: 35%;
+    width: 65px;
+  }
+  .section-home button {
+    padding: 10px 20px;
+    margin: 0 15% 5%;
+    font-size: 0.6rem;
+  }
+  .section-home header div {
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  .section-home header div button {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section-home header {
+    height: 10vh;
+  }
+  .section-home header img {
+    height: 5vh;
+  }
+  .section-home h1 {
+    font-size: 8vmin;
+    margin: 3% 0 2% 15%;
+  }
+  .section-home .best-quality-food {
+    top: 20%;
+    left: 35%;
+    width: 65px;
+  }
+  .section-home button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .section-home button span {
+    padding-left: 8px;
+  }
+  .section-home button span img {
+    height: 10px;
+    width: 10px;
+  }
+  .section-home header nav ul li {
+    font-size: 0.9rem;
+  }
+  .section-home header nav ul li .arrow-menu {
+    height: 10px;
+  }
+  .section-home header div button {
+    font-size: 0.9rem;
+  }
+  .section-home header div button .phone {
+    height: 10px;
+    width: 10px;
+  }
+  .section-home header div button .arrow {
+    height: 10px;
+    width: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-home header {
+    height: 10vh;
+  }
+  .section-home header img {
+    height: 5vh;
+  }
+  .section-home h1 {
+    font-size: 9vmin;
+    margin: 3% 0 2% 15%;
+  }
+  .section-home .best-quality-food {
+    top: 20%;
+    left: 35%;
+    width: 65px;
+  }
+  .section-home button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .section-home button span {
+    padding-left: 8px;
+  }
+  .section-home button span img {
+    height: 10px;
+    width: 10px;
+  }
+  .section-home header nav ul li {
+    font-size: 0.9rem;
+  }
+  .section-home header nav ul li .arrow-menu {
+    height: 10px;
+  }
+  .section-home header div button {
+    font-size: 0.9rem;
+  }
+  .section-home header div button .phone {
+    height: 10px;
+    width: 10px;
+  }
+  .section-home header div button .arrow {
+    height: 10px;
+    width: 10px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .section-home header {
+    height: 10vh;
+  }
+  .section-home header img {
+    height: 5vh;
+  }
+  .section-home h1 {
+    font-size: 12vmin;
+    margin: 3% 0 0 15%;
+  }
+  .section-home .best-quality-food {
+    top: 20%;
+    left: 35%;
+    width: 80px;
+  }
+  .section-home button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .section-home button span {
+    padding-left: 8px;
+  }
+  .section-home button span img {
+    height: 13px;
+    width: 13px;
+  }
+  .section-home header nav ul li {
+    font-size: 1rem;
+  }
+  .section-home header nav ul li .arrow-menu {
+    height: 10px;
+  }
+  .section-home header div button {
+    font-size: 1rem;
+  }
+  .section-home header div button .phone {
+    height: 13px;
+    width: 13px;
+  }
+  .section-home header div button .arrow {
+    height: 13px;
+    width: 13px;
   }
 }
 .section-category {
   position: relative;
-  background-color: rgba(245, 238, 227, 0.5568627451);
+  background-color: rgba(250, 246, 240, 0.8);
   background-position: center;
   font-family: "Roboto", sans-serif;
 }
 .section-category .banner {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52.5%;
   transform: translate(-50%, -50%);
-  width: 100vw;
+  width: 110vw;
   z-index: -1;
 }
 .section-category h2 {
@@ -623,21 +875,14 @@ template {
 
 .section-menu {
   position: relative;
-  background-color: rgba(245, 238, 227, 0.5568627451);
+  background-color: rgba(250, 246, 240, 0.8);
   background-position: center;
   font-family: "Roboto", sans-serif;
   min-height: 60vh;
   height: 90vh;
 }
-.section-menu .images-menu img:first-child {
-  position: absolute;
-  bottom: -10vh;
-  width: 25vw;
-}
-.section-menu .images-menu img:last-child {
-  position: absolute;
-  left: 73vw;
-  height: 100%;
+.section-menu .images-menu {
+  display: none;
 }
 .section-menu h2 {
   top: 5%;
