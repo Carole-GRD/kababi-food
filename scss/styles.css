@@ -697,13 +697,13 @@ template {
     height: 5vh;
   }
   .section-home h1 {
-    font-size: 12vmin;
-    margin: 3% 0 0 15%;
+    font-size: 15vmin;
+    margin: 4% 0 5% 15%;
   }
   .section-home .best-quality-food {
     top: 20%;
     left: 35%;
-    width: 80px;
+    width: 90px;
   }
   .section-home button {
     padding: 10px 20px;
@@ -958,12 +958,13 @@ template {
 .section-about {
   position: relative;
   font-family: "Roboto", sans-serif;
-  height: 55vh;
-  padding-bottom: 2vh;
+  min-height: 40vh;
+  padding-bottom: 1vh;
 }
 .section-about .images-about {
   display: grid;
   grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 1fr;
   grid-gap: 2%;
 }
 .section-about .images-about img:nth-of-type(1) {
@@ -986,23 +987,23 @@ template {
   width: 75%;
 }
 .section-about h2 {
-  top: 35%;
+  display: none;
 }
-.section-about .container-title h3 {
-  top: 35%;
-}
-.section-about .container-title h4 {
-  top: 40%;
+.section-about .container-title {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .section-about .best-quality-food {
   position: absolute;
-  top: 40%;
+  top: 110px;
   left: 75%;
-  width: 13%;
+  width: 10%;
 }
 .section-about .content-about {
   position: absolute;
-  top: 50%;
+  top: 150px;
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
@@ -1032,6 +1033,229 @@ template {
   filter: invert(100%);
 }
 
+@media only screen and (min-width: 410px) {
+  .section-about {
+    height: 70vh;
+  }
+  .section-about .container-title {
+    top: 20vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 1rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 0.7rem;
+  }
+  .section-about .best-quality-food {
+    top: 25vh;
+  }
+  .section-about .content-about {
+    top: 45%;
+    width: 65%;
+  }
+  .section-about .content-about img {
+    max-width: 50%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 0.6rem;
+  }
+  .section-about .content-about .txt-about button {
+    width: 70%;
+    font-size: 0.5rem;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .section-about {
+    height: 70vh;
+  }
+  .section-about .container-title {
+    top: 20vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 1rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 0.7rem;
+  }
+  .section-about .best-quality-food {
+    top: 25vh;
+  }
+  .section-about .content-about {
+    top: 45%;
+    width: 65%;
+  }
+  .section-about .content-about img {
+    max-width: 50%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 0.6rem;
+  }
+  .section-about .content-about .txt-about button {
+    width: 70%;
+    font-size: 0.5rem;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 8px;
+    height: 8px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .section-about {
+    height: 90vh;
+  }
+  .section-about h2 {
+    display: block;
+    position: absolute;
+    top: 30vh;
+    font-size: 5rem;
+    left: 0.1ch;
+  }
+  .section-about .container-title {
+    top: 28vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 1.5rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 0.7rem;
+  }
+  .section-about .best-quality-food {
+    top: 32vh;
+  }
+  .section-about .content-about {
+    top: 50%;
+    width: 65%;
+  }
+  .section-about .content-about img {
+    max-width: 50%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 0.8rem;
+    padding-bottom: 10%;
+  }
+  .section-about .content-about .txt-about button {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+  .section-about .content-about .txt-about button span {
+    margin-left: 5px;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-about {
+    height: 100vh;
+  }
+  .section-about h2 {
+    display: block;
+    position: absolute;
+    top: 40vh;
+    font-size: 5rem;
+    left: 0.1ch;
+  }
+  .section-about .container-title {
+    top: 38vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 1.7rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 0.8rem;
+  }
+  .section-about .best-quality-food {
+    top: 42vh;
+  }
+  .section-about .content-about {
+    top: 55%;
+    width: 65%;
+  }
+  .section-about .content-about img {
+    max-width: 40%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 0.8rem;
+    padding-bottom: 10%;
+  }
+  .section-about .content-about .txt-about button {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+  .section-about .content-about .txt-about button span {
+    margin-left: 5px;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section-about {
+    height: 120vh;
+  }
+  .section-about h2 {
+    display: block;
+    position: absolute;
+    top: 50vh;
+    font-size: 5rem;
+    left: 0.1ch;
+  }
+  .section-about .container-title {
+    top: 48vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 2rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 1rem;
+  }
+  .section-about .best-quality-food {
+    top: 52vh;
+  }
+  .section-about .content-about {
+    top: 55%;
+    width: 55%;
+  }
+  .section-about .content-about img {
+    max-width: 40%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 1rem;
+    padding-bottom: 10%;
+  }
+  .section-about .content-about .txt-about button {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .section-about .content-about .txt-about button span {
+    margin-left: 5px;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 10px;
+    height: 10px;
+  }
+}
 .section-menu {
   position: relative;
   background-color: rgba(250, 246, 240, 0.8);

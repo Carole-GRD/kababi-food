@@ -5,12 +5,13 @@
 .section-about {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    height: 55vh;
-    padding-bottom: 2vh;
+    min-height: 40vh;
+    padding-bottom: 1vh;
 
     .images-about {
         display: grid;
         grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 1fr;
         grid-gap: 2%;
 
         img:nth-of-type(1) {
@@ -36,42 +37,35 @@
 
     h2 {
         @extend %h2form;
-        top: 35%;
-        // position: absolute;
-        // left: 5px;
-        // color: $color-darkbeige;
-        // text-transform: uppercase;
-        // font-size: 2.3rem;
-        // font-weight: 100;
-        // margin: 0;
-        // font-family: 'Cinzel', serif;
+        display: none;
     }
-
+    
     .container-title {
         @extend %containertitle;
-        
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+
         h3 {
             @extend %h3form;
-            top: 35%;
         }
-    
+        
         h4 {
             @extend %h4form;
-            top: 40%;
         }
     }
-
 
     .best-quality-food {
         position: absolute;
-        top: 40%;
+        top: 110px;
         left: 75%;
-        width: 13%;
+        width: 10%;
     }
 
     .content-about {
         position: absolute;
-        top: 50%;
+        top: 150px;
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
@@ -103,10 +97,7 @@
                 }
             }
         }
-
     }
-
-
 }
 
 
@@ -116,7 +107,51 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 410px) {
-
+    .section-about {
+        height: 70vh;
+        
+        .container-title {
+            top: 20vh;
+    
+            h3 {
+                font-size: 1rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 25vh;
+        }
+    
+        .content-about {
+            top: 45%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: .6rem;
+                }
+                button {
+                    width: 70%;
+                    font-size: .5rem;
+                    span {
+                        img {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -124,10 +159,116 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-// AJOUTER LES TITRES H2 DISPLAY BLOCK 
 @media only screen and (min-width: 576px) {
+    .section-about {
+        height: 70vh;
+        
+        .container-title {
+            top: 20vh;
+    
+            h3 {
+                font-size: 1rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 25vh;
+        }
+    
+        .content-about {
+            top: 45%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: .6rem;
+                }
+                button {
+                    width: 70%;
+                    font-size: .5rem;
+                    span {
+                        img {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (576px -> 768px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+@media only screen and (min-width: 576px) {
+    .section-about {
+        height: 90vh;
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 30vh;
+            font-size: 5rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 28vh;
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 32vh;
+        }
+    
+        .content-about {
+            top: 50%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                // padding: 5%;
+                width: 60%;
+                p {
+                    font-size: .8rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .6rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -135,9 +276,62 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 768px) {
-
-
+    .section-about {
+        height: 100vh;
     
+        h2 {
+            display: block;
+            position: absolute;
+            top: 40vh;
+            font-size: 5rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 38vh;
+    
+            h3 {
+                font-size: 1.7rem;
+            }
+            
+            h4 {
+                font-size: .8rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 42vh;
+        }
+    
+        .content-about {
+            top: 55%;
+            width: 65%;
+    
+            img {
+                max-width: 40%;
+            }
+    
+            .txt-about {
+                // padding: 5%;
+                width: 60%;
+                p {
+                    font-size: .8rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .6rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -145,7 +339,61 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @media only screen and (min-width: 992px) {
-
+    .section-about {
+        height: 120vh;
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 50vh;
+            font-size: 5rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 48vh;
+    
+            h3 {
+                font-size: 2rem;
+            }
+            
+            h4 {
+                font-size: 1rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 52vh;
+        }
+    
+        .content-about {
+            top: 55%;
+            width: 55%;
+    
+            img {
+                max-width: 40%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: 1rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .8rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
 
