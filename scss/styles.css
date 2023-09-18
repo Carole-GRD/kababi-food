@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
     ========================================================================== 
@@ -328,7 +329,7 @@ template {
   padding: 5px 10px;
 }
 
-.section-menu h2, .section-about h2, .section-category h2 {
+article h2, .section-menu h2, .section-about h2, .section-category h2 {
   left: 5px;
   color: #f5eee3;
   text-transform: uppercase;
@@ -343,7 +344,7 @@ template {
   padding: 30px 0;
 }
 
-.section-menu .container-title h3, .section-about .container-title h3, .section-category .container-title h3 {
+article h3, .list h3, .section-menu .container-title h3, .section-about .container-title h3, .section-category .container-title h3 {
   font-family: "Cinzel", serif;
   font-weight: 300;
   font-size: 0.7rem;
@@ -351,7 +352,7 @@ template {
   margin: 0 0 5px;
 }
 
-.section-menu .container-title h4, .section-about .container-title h4, .section-category .container-title h4 {
+h4, .section-menu .container-title h4, .section-about .container-title h4, .section-category .container-title h4 {
   font-size: 0.5rem;
   font-weight: 300;
   text-align: center;
@@ -360,7 +361,7 @@ template {
 
 .section-home {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url("../../images/slider/img_bg_slider_home01.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url("../images/slider/img_bg_slider_home01.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
@@ -899,6 +900,9 @@ template {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .section-category h2 {
+    font-size: 10rem;
+  }
   .section-category .container-title {
     top: 45px;
   }
@@ -1162,6 +1166,17 @@ template {
   .section-about {
     height: 100vh;
   }
+  .section-about .images-about img:nth-of-type(1) {
+    top: 5%;
+    width: 70%;
+  }
+  .section-about .images-about img:nth-of-type(2) {
+    top: -12vh;
+    width: 85%;
+  }
+  .section-about .images-about img:nth-of-type(3) {
+    width: 70%;
+  }
   .section-about h2 {
     display: block;
     position: absolute;
@@ -1215,11 +1230,11 @@ template {
     display: block;
     position: absolute;
     top: 50vh;
-    font-size: 5rem;
+    font-size: 7rem;
     left: 0.1ch;
   }
   .section-about .container-title {
-    top: 48vh;
+    top: 49vh;
   }
   .section-about .container-title h3 {
     font-size: 2rem;
@@ -1256,29 +1271,71 @@ template {
     height: 10px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .section-about {
+    height: 160vh;
+  }
+  .section-about h2 {
+    display: block;
+    position: absolute;
+    top: 70vh;
+    font-size: 10rem;
+    left: 0.1ch;
+  }
+  .section-about .container-title {
+    top: 70vh;
+  }
+  .section-about .container-title h3 {
+    font-size: 2.7rem;
+  }
+  .section-about .container-title h4 {
+    font-size: 1.3rem;
+  }
+  .section-about .best-quality-food {
+    top: 72vh;
+  }
+  .section-about .content-about {
+    top: 60%;
+    width: 55%;
+  }
+  .section-about .content-about img {
+    max-width: 40%;
+  }
+  .section-about .content-about .txt-about {
+    width: 60%;
+  }
+  .section-about .content-about .txt-about p {
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+  }
+  .section-about .content-about .txt-about button {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  .section-about .content-about .txt-about button span {
+    margin-left: 5px;
+  }
+  .section-about .content-about .txt-about button span img {
+    width: 15px;
+    height: 15px;
+  }
+}
 .section-menu {
   position: relative;
   background-color: rgba(250, 246, 240, 0.8);
   background-position: center;
   font-family: "Roboto", sans-serif;
-  min-height: 60vh;
-  height: 90vh;
+  min-height: 65vh;
 }
 .section-menu .images-menu {
   display: none;
 }
 .section-menu h2 {
-  top: 5%;
-}
-.section-menu .container-title h3 {
-  top: 5%;
-}
-.section-menu .container-title h4 {
-  top: 8.5%;
+  display: none;
 }
 .section-menu .card-menu {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   display: grid;
@@ -1319,6 +1376,646 @@ template {
   border: 2px #c8a96a dashed;
 }
 
+@media only screen and (min-width: 410px) {
+  .section-menu {
+    height: 80vh;
+  }
+  .section-menu .container-title h3 {
+    top: 5%;
+    font-size: 1rem;
+  }
+  .section-menu .container-title h4 {
+    top: 8.5%;
+    font-size: 0.7rem;
+  }
+  .section-menu .card-menu {
+    font-size: 0.7rem;
+    width: 60%;
+  }
+  .section-menu .card-menu article {
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    border-radius: 3px;
+    padding: 4% 0;
+  }
+  .section-menu .card-menu article .detail-menu {
+    padding: 0% 10%;
+  }
+  .section-menu .card-menu article .detail-menu h5 {
+    margin: 0 0 3% 0;
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .section-menu .card-menu article .detail-menu p {
+    margin: 0;
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  .section-menu .card-menu article .price {
+    justify-self: center;
+    color: #c8a96a;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+  }
+  .section-menu .card-menu article:hover {
+    border: 2px #c8a96a dashed;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .section-menu {
+    height: 120vh;
+  }
+  .section-menu .images-menu {
+    display: block;
+  }
+  .section-menu .images-menu img:first-child {
+    position: absolute;
+    bottom: -10vh;
+    width: 25vw;
+  }
+  .section-menu .images-menu img:last-child {
+    position: absolute;
+    left: 73vw;
+    height: 100%;
+  }
+  .section-menu h2 {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    font-size: 5rem;
+  }
+  .section-menu .container-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-menu .container-title h3 {
+    font-size: 1.5rem;
+    top: 5%;
+  }
+  .section-menu .container-title h4 {
+    font-size: 0.7rem;
+    top: 8.5%;
+  }
+  .section-menu .card-menu {
+    position: absolute;
+    top: 20vh;
+  }
+  .section-menu .card-menu article .detail-menu {
+    padding: 0% 10%;
+  }
+  .section-menu .card-menu article .detail-menu h5 {
+    margin: 0 0 3% 0;
+    font-size: 0.9rem;
+  }
+  .section-menu .card-menu article .detail-menu p {
+    margin: 0;
+    font-size: 0.5rem;
+  }
+  .section-menu .card-menu article .price {
+    justify-self: center;
+    color: #c8a96a;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+  }
+  .section-menu .card-menu article:hover {
+    border: 2px #c8a96a dashed;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-menu .images-menu {
+    display: block;
+  }
+  .section-menu .images-menu img:first-child {
+    position: absolute;
+    bottom: -10vh;
+    width: 25vw;
+  }
+  .section-menu .images-menu img:last-child {
+    position: absolute;
+    height: 50%;
+  }
+  .section-menu h2 {
+    display: block;
+    position: absolute;
+    top: 5%;
+  }
+  .section-menu .container-title {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-menu .container-title h3 {
+    font-size: 1.7rem;
+    top: 5%;
+  }
+  .section-menu .container-title h4 {
+    font-size: 0.8rem;
+    top: 8.5%;
+  }
+  .section-menu .card-menu article .detail-menu {
+    padding: 0% 10%;
+  }
+  .section-menu .card-menu article .detail-menu h5 {
+    margin: 0 0 3% 0;
+    font-size: 0.7rem;
+  }
+  .section-menu .card-menu article .detail-menu p {
+    margin: 0;
+    font-size: 0.5rem;
+  }
+  .section-menu .card-menu article .price {
+    justify-self: center;
+    color: #c8a96a;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+  }
+  .section-menu .card-menu article:hover {
+    border: 2px #c8a96a dashed;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-menu .images-menu {
+    display: block;
+  }
+  .section-menu .images-menu img:first-child {
+    position: absolute;
+    bottom: -20vh;
+    width: 20vw;
+  }
+  .section-menu .images-menu img:last-child {
+    position: absolute;
+    left: 73vw;
+    height: 100%;
+  }
+  .section-menu h2 {
+    display: block;
+    position: absolute;
+    top: 5%;
+  }
+  .section-menu .container-title {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-menu .container-title h3 {
+    font-size: 1.7rem;
+    top: 5%;
+  }
+  .section-menu .container-title h4 {
+    font-size: 0.8rem;
+    top: 8.5%;
+  }
+  .section-menu .card-menu {
+    position: absolute;
+    top: 30vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    width: 70%;
+  }
+  .section-menu .card-menu article .detail-menu {
+    padding: 0% 10%;
+  }
+  .section-menu .card-menu article .detail-menu h5 {
+    margin: 0 0 3% 0;
+    font-size: 1rem;
+  }
+  .section-menu .card-menu article .detail-menu p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  .section-menu .card-menu article .price {
+    font-size: 2rem;
+  }
+}
+.footer {
+  background: #000000;
+  padding: 85px O;
+  justify-content: space-between;
+  font-family: "cinzel", serif;
+  font-family: "roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-kababi-logo {
+  position: absolute;
+  background-image: url("images/logo/logo2@2x.png");
+  background-position: center;
+  bottom: 10vh;
+  width: 10vw;
+  padding: 115px 0;
+}
+
+.list h3 {
+  top: 19px;
+  color: #ffffff;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: #212427;
+}
+
+.list p {
+  color: #ffffff;
+  line-height: 1.9;
+}
+
+#basic-addon2 {
+  color: #a88253;
+  color: #ffffff;
+}
+
+.card-area .facebook {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+.card-area .twitter {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+.card-area .youtube {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+.card-area .linkedin {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (max-width: 410px) {
+  body section .section-chefs {
+    position: relative;
+    background-image: url("kababi-food/images/team-chef/imgbg-ourchefs.jpg");
+    background-position: center;
+  }
+}
+article {
+  background: #ffffff;
+  font-family: "cinzel", serif;
+}
+article .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+article .column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  /* Marge intérieure pour chaque élément */
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background-color: #faf6f0;
+}
+article h2 {
+  top: 20px;
+}
+article h3 {
+  top: 19px;
+  color: #ffffff;
+}
+
+h4 {
+  top: 40px;
+}
+
+.image1 {
+  max-width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.column-content:nth-child(odd) {
+  background-color: #faf6f0;
+  /* Fond beige pour la première flexbox */
+}
+
+.column-content img {
+  max-width: 100%;
+}
+
+.author, .date {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.author img, .date img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Styles pour les boutons "Read More" */
+.read-more-btn {
+  background-color: #ffffff;
+  color: #212427;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  /* Ajoute une transition de couleur de fond */
+}
+
+.read-more-btn img {
+  margin-left: 5px;
+}
+
+/* Style au survol du bouton "Read More" */
+.read-more-btn:hover {
+  background-color: #a88253;
+  color: #ffffff;
+  /* Couleur différente au survol */
+}
+
+/* Styles pour la section des sponsors */
+.article-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sponsors img {
+  max-width: 100%;
+  margin: 0 10px;
+}
+
+.section-category {
+  position: relative;
+  background-color: rgba(250, 246, 240, 0.8);
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 520px;
+  height: auto;
+}
+.section-category .banner {
+  display: none;
+}
+.section-category h2 {
+  display: none;
+}
+.section-category .card-category {
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  grid-gap: 5vw;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.section-category .card-category article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 20% 0 15%;
+}
+.section-category .card-category article h5 {
+  margin: 0.7rem 0 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+.section-category .card-category article .icon {
+  width: 25%;
+}
+.section-category .card-category article .arrow {
+  scale: 0.4;
+}
+.section-category .card-category article:hover {
+  background-color: #c8a96a;
+  color: #fefefe;
+}
+.section-category .card-category article:hover .icon {
+  filter: brightness(0) invert(1);
+}
+.section-category .card-category article:hover .arrow {
+  filter: invert(100%);
+}
+
+@media only screen and (min-width: 410px) {
+  .section-category .container-title h3 {
+    font-size: 1rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 0.7rem;
+  }
+  .section-category .card-category {
+    margin-bottom: 13vh;
+  }
+  .section-category .card-category article h5 {
+    margin: 0.6rem 0 0.4rem;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .section-category {
+    height: 95vh;
+  }
+  .section-category h2 {
+    display: block;
+    padding-top: 25px;
+    position: absolute;
+    z-index: 0;
+    font-size: 5rem;
+    left: 0.1ch;
+  }
+  .section-category .container-title {
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-category .container-title h3 {
+    font-size: 1.5rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 0.7rem;
+  }
+  .section-category .card-category {
+    grid-template-columns: repeat(2, 25vw);
+    margin-bottom: 13vh;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 500px;
+    overflow-inline: visible;
+  }
+  .section-category .card-category article h5 {
+    margin: 0.6rem 0 0.4rem;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-category {
+    height: 80vh;
+  }
+  .section-category .banner {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100%;
+    z-index: -1;
+  }
+  .section-category h2 {
+    padding-top: 35px;
+    position: absolute;
+    z-index: 0;
+    font-size: 5rem;
+    left: 0.1ch;
+  }
+  .section-category .container-title {
+    top: 25px;
+  }
+  .section-category .container-title h3 {
+    font-size: 1.5rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 0.8rem;
+  }
+  .section-category .card-category {
+    grid-template-columns: repeat(3, 15vw);
+    grid-gap: 2vw;
+    margin: 5vh 0;
+  }
+  .section-category .card-category article h5 {
+    font-size: 0.8rem;
+  }
+  .section-category .card-category article .arrow {
+    scale: 0.5;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section-category h2 {
+    padding-top: 45px;
+    font-size: 7rem;
+  }
+  .section-category .container-title {
+    top: 35px;
+  }
+  .section-category .container-title h3 {
+    font-size: 2rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section-category h2 {
+    font-size: 10rem;
+  }
+  .section-category .container-title {
+    top: 45px;
+  }
+  .section-category .container-title h3 {
+    font-size: 2.7rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 1.3rem;
+  }
+  .section-category .card-category {
+    grid-template-columns: repeat(6, 10vw);
+    margin-top: 13vh;
+  }
+  .section-category .card-category article h5 {
+    margin: 1rem 0 0.8rem;
+    font-size: 1rem;
+  }
+  .section-category .card-category article .icon {
+    width: 30%;
+  }
+  .section-category .card-category article .arrow {
+    scale: 0.6;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .section-category {
+    min-height: 800px;
+  }
+  .section-category .banner {
+    width: 100%;
+  }
+  .section-category h2 {
+    padding-top: 45px;
+    font-size: 10rem;
+  }
+  .section-category .container-title h3 {
+    font-size: 3rem;
+  }
+  .section-category .container-title h4 {
+    font-size: 1.6rem;
+  }
+  .section-category .card-category {
+    margin-bottom: 13vh;
+    margin-top: 20vh;
+  }
+  .section-category .card-category article h5 {
+    margin: 1.3rem 0 1rem;
+    font-size: 1rem;
+  }
+  .section-category .card-category article .icon {
+    width: 30%;
+  }
+  .section-category .card-category article .arrow {
+    scale: 0.7;
+  }
+}
+@media screen and (max-width: 410px) {
+  body section .gallery {
+    position: relative;
+    background-color: rgba(250, 246, 240, 0.8);
+    background-position: center;
+    font-family: "Cinzel", serif;
+  }
+  body section .gallery h2 {
+    top: 20px;
+  }
+  body section .gallery h3 {
+    top: 19px;
+  }
+  body section .gallery h4 {
+    top: 40px;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-columns: 100vw;

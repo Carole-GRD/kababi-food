@@ -3,15 +3,15 @@ article {
     font-family: 'cinzel', serif;
 
     .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 800px;
-    padding: 20px;
-    border: 1px solid $color-white;
-    border-radius: 8px;
-    margin: 20px 0;
-}
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 800px;
+        padding: 20px;
+        border: 1px solid $color-white;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
     
     .column-content {
         display: flex;
@@ -23,6 +23,7 @@ article {
         border: 1px solid $color-white;
         border-radius: 8px;
         background-color: $color-lightbeige;
+    }
 
 
 
@@ -38,7 +39,8 @@ article {
         //margin: 0;
         //font-family: 'Cinzel', serif;
     }
-    h3 { @extend %h3form {
+    h3 { 
+        @extend %h3form;
         top: 19px;
         color:$color-white;
         //position: absolute;
@@ -55,7 +57,8 @@ article {
 }
 
 
-h4{%h4form {
+h4{ 
+    @extend %h4form;
     top: 40px;
     //position: absolute;
     //left: 50%;
@@ -65,7 +68,7 @@ h4{%h4form {
     //font-weight: 300;
     //text-align: center;
 }
- }
+
 .image1 {
     max-width: 100%;
 }
@@ -75,11 +78,10 @@ h4{%h4form {
     margin-top: 10px;
     width: 20px;
     height: 20px;
-    margin
 }
 
-.column-content:nth-child(odd){
-    background-color:$color-lightbeige; 
+.column-content:nth-child(odd) {
+    background-color: $color-lightbeige; 
     /* Fond beige pour la première flexbox */
 }
 
@@ -138,8 +140,6 @@ h4{%h4form {
 }
 
 
-}
-}
 
 
 
@@ -159,12 +159,11 @@ h4{%h4form {
 
 
 
-{ }
 
 
 
 @media screen and (max-width: 410px) {
-    { }
+
           
     }
     
