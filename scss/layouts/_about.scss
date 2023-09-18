@@ -1,0 +1,484 @@
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (350px -> 410px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.section-about {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    min-height: 40vh;
+    padding-bottom: 1vh;
+
+    .images-about {
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-gap: 2%;
+
+        img:nth-of-type(1) {
+            position: relative;
+            top: 5%;
+            justify-self: flex-end;
+            width: 75%;
+        }
+        img:nth-of-type(2) {
+            position: relative;
+            top: -8vh;
+            width: 90%;
+            border-radius: 50%;
+            border: 5px solid $color-white;
+        }
+        img:nth-of-type(3) {
+            position: relative;
+            top: 5%;
+            justify-self: flex-start;
+            width: 75%;
+        }
+    }
+
+    h2 {
+        @extend %h2form;
+        display: none;
+    }
+    
+    .container-title {
+        @extend %containertitle;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        h3 {
+            @extend %h3form;
+        }
+        
+        h4 {
+            @extend %h4form;
+        }
+    }
+
+    .best-quality-food {
+        position: absolute;
+        top: 110px;
+        left: 75%;
+        width: 10%;
+    }
+
+    .content-about {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 40%;
+            // height: 110px;
+        }
+
+        .txt-about {
+            padding: 5%;
+            width: 60%;
+            p {
+                font-size: 0.5rem;
+            }
+            button {
+                @extend %buttonform;
+                background-color: $color-light-gold;
+                width: 65%;
+                margin: 0;
+                span {
+                    margin-left: 5px;
+                    img {
+                        width: 5px;
+                        filter: invert(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (410px -> 576px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 410px) {
+    .section-about {
+        height: 70vh;
+        
+        .container-title {
+            top: 20vh;
+    
+            h3 {
+                font-size: 1rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 25vh;
+        }
+    
+        .content-about {
+            top: 45%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: .6rem;
+                }
+                button {
+                    width: 70%;
+                    font-size: .5rem;
+                    span {
+                        img {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (576px -> 768px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@media only screen and (min-width: 576px) {
+    .section-about {
+        height: 70vh;
+        
+        .container-title {
+            top: 20vh;
+    
+            h3 {
+                font-size: 1rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 25vh;
+        }
+    
+        .content-about {
+            top: 45%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: .6rem;
+                }
+                button {
+                    width: 70%;
+                    font-size: .5rem;
+                    span {
+                        img {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (576px -> 768px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+@media only screen and (min-width: 576px) {
+    .section-about {
+        height: 90vh;
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 30vh;
+            font-size: 5rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 28vh;
+    
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            h4 {
+                font-size: .7rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 32vh;
+        }
+    
+        .content-about {
+            top: 50%;
+            width: 65%;
+    
+            img {
+                max-width: 50%;
+            }
+    
+            .txt-about {
+                // padding: 5%;
+                width: 60%;
+                p {
+                    font-size: .8rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .6rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (768px -> 992px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 768px) {
+    .section-about {
+        height: 100vh;
+
+        .images-about {
+    
+            img:nth-of-type(1) {
+                top: 5%;
+                width: 70%;
+            }
+            img:nth-of-type(2) {
+                top: -12vh;
+                width: 85%;
+            }
+            img:nth-of-type(3) {
+                width: 70%;
+            }
+        }
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 40vh;
+            font-size: 5rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 38vh;
+    
+            h3 {
+                font-size: 1.7rem;
+            }
+            
+            h4 {
+                font-size: .8rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 42vh;
+        }
+    
+        .content-about {
+            top: 55%;
+            width: 65%;
+    
+            img {
+                max-width: 40%;
+            }
+    
+            .txt-about {
+                // padding: 5%;
+                width: 60%;
+                p {
+                    font-size: .8rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .6rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (992px -> 1200px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 992px) {
+    .section-about {
+        height: 120vh;
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 50vh;
+            font-size: 7rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 49vh;
+    
+            h3 {
+                font-size: 2rem;
+            }
+            
+            h4 {
+                font-size: 1rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 52vh;
+        }
+    
+        .content-about {
+            top: 55%;
+            width: 55%;
+    
+            img {
+                max-width: 40%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: 1rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: .8rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   ORDINATEURS (1200px -> 1600px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 1200px) {
+    .section-about {
+        height: 160vh;
+    
+        h2 {
+            display: block;
+            position: absolute;
+            top: 70vh;
+            font-size: 10rem;
+            left: .1ch;
+        }
+        
+        .container-title {
+            top: 70vh;
+    
+            h3 {
+                font-size: 2.7rem;
+            }
+            
+            h4 {
+                font-size: 1.3rem;
+            }
+        }
+    
+        .best-quality-food {
+            top: 72vh;
+        }
+    
+        .content-about {
+            top: 60%;
+            width: 55%;
+    
+            img {
+                max-width: 40%;
+            }
+    
+            .txt-about {
+                width: 60%;
+                p {
+                    font-size: 1.5rem;
+                    padding-bottom: 10%;
+                }
+                button {
+                    width: 80%;
+                    font-size: 1.2rem;
+                    span {
+                        margin-left: 5px;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   ORDINATEURS (1600px -> )
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 1600px) {
+
+
+}

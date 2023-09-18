@@ -1,0 +1,128 @@
+.footer {
+            background:$color-black;
+            padding: 85px O;
+            justify-content: space-between;
+            font-family: 'cinzel', serif;
+            font-family: 'roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-kababi-logo {
+                        position:absolute;
+                        background-image: url("images/logo/logo2@2x.png");
+                        background-position: center;
+                        bottom: 10vh;
+                        width: 10vw;
+                        padding: 115px 0;
+                    } 
+            
+// exemple : @include box-shadow($color-blue-1);
+
+                .list h3 { 
+                    @extend %h3form;
+                    top: 19px;
+                    color:$color-white;
+                    //position: absolute;
+                    //top: 19px;
+                    //left: 50%;
+                    //transform: translateX(-50%);
+                    //width: 80% ;
+                    //text-transform: uppercase;
+                    //font-family: 'Cinzel', serif;
+                    //font-weight: 300;
+                    //font-size: .7rem;
+                    //text-align: center;
+                }
+           
+            .list ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .list ul li a{ 
+                text-decoration: none;
+                color:$color-darkgrey;
+                
+            }
+                .list p { color: $color-white;
+                line-height: 1.9;
+        }
+        #basic-addon2{
+        color:$color-darkgold;
+        color:$color-white;
+    }
+    // .footer-bottom { 
+    //     .copyright{
+    //     }
+    // }
+        .card-area {
+            .facebook { 
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+        .twitter{ 
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+        .youtube{ 
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+        .linkedin { 
+            position: absolute;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+
+
+
+
+
+    
+        @media screen and (max-width: 410px) {
+            //com interieur footer  
+            // position: relative; 
+            //display: ; 
+            //flex-wrap:nowrap; 
+            //padding: 50px; //
+        }
+
+
+@media screen and (max-width: 410px) {
+}
+    
+    
+    //mobile-minimum//
+    @media screen and (min-width: 410px) and (max-width:576px){
+    
+    
+    }   
+    //minimum-tablet//
+    @media screen and (min-width: 576px) and (max-width:1024px){
+    
+    
+    } 
+    
+    //tablet-laptop//
+    @media screen and (min-width: 768px) and (max-width:1024px){
+    
+    
+    } 
+    
+    //laptop-desktop//
+    @media screen and (min-width: 1024px) and (max-width:1600px){
+    
+    
+    } 
+    
+    // desktop//
+    @media screen and (min-width:1600px){
+    
+    
+    } 

@@ -1,0 +1,82 @@
+//mobile//
+@media screen and (max-width: 410px) {
+    body {
+        section .gallery {
+            position:relative;
+            background-color: $color-lightbeige-transparent;
+            background-position: center;
+            font-family:'Cinzel', serif;
+
+            h2 { 
+                // @extend %h2form;
+                top: 20px;
+                //position: absolute;
+                //left: 5px;
+                //color: $color-darkbeige;
+                //text-transform: uppercase;
+                // font-size: 2.3rem;
+                //font-weight: 100;
+                //margin: 0;
+                //font-family: 'Cinzel', serif;
+            }
+            h3 {
+                // @extend %h3form;
+                top: 19px;
+                //position: absolute;
+                //top: 19px;
+                //left: 50%;
+                //transform: translateX(-50%);
+                //width: 80% ;
+                //text-transform: uppercase;
+                //font-family: 'Cinzel', serif;
+                //font-weight: 300;
+                //font-size: .7rem;
+                //text-align: center;
+            }
+            
+            h4 {
+                // @extend %h4form;
+                top: 40px;
+                //position: absolute;
+                //left: 50%;
+                //transform: translateX(-50%);
+                //width: 80% ;
+                //font-size: .4rem;
+                //font-weight: 300;
+                //text-align: center;
+            }
+
+        }
+    }
+}
+
+
+//mobile-minimum//
+@media screen and (min-width: 410px) and (max-width:576px){
+
+
+}   
+//minimum-tablet//
+@media screen and (min-width: 576px) and (max-width:1024px){
+
+
+} 
+
+//tablet-laptop//
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+
+} 
+
+//laptop-desktop//
+@media screen and (min-width: 1024px) and (max-width:1600px){
+
+
+} 
+
+// desktop//
+@media screen and (min-width:1600px){
+
+
+} 
+

@@ -1,0 +1,541 @@
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (350px -> 410px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.section-home {
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url('../images/slider/img_bg_slider_home01.jpg');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $color-white;
+    font-family: 'Roboto', sans-serif;
+
+
+    header {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        font-size: .3rem;
+        height: 5vh;
+    
+        img {
+            height: 2vh;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+
+    h1 {
+        // font-size: 1.2rem;
+        font-size: 5vmin;
+
+        font-weight: 300;
+        width: 10ch;
+        text-transform: uppercase;
+        margin: 0 0 2% 15%;
+        padding-top: 20px;
+        font-family: 'Cinzel', serif;
+    }
+
+    .best-quality-food {
+        position: absolute;
+        top: 20%;
+        left: 33%;
+        width: 35px;
+    }
+
+    button {
+        @extend %buttonform; 
+        border: .1rem solid $color-white;
+        margin: 0 0 5% 15%;
+
+        span {
+            margin-left: 5px;
+            img {
+                width: 6px;
+                filter: invert(100%);
+            }
+        }
+    }
+}
+
+.section-home header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+
+    ul {
+        padding: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 18%);
+
+        li {
+            list-style-type: none; 
+            align-self: center;
+            cursor: pointer;
+            
+            .arrow-menu {
+                height: 5px;
+                filter: invert(100%);
+            }
+        }
+
+        li:hover {
+            color: $color-light-gold;
+        }
+    }
+}
+
+.section-home header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+
+    button {
+        @extend %buttonform; 
+        cursor: pointer;
+        width: 100%;
+        margin: 0;
+        font-size: .3rem;
+
+        .phone {
+            height: 5px;
+            filter: invert(100%);
+            transform: scaleX(-1);
+        }
+        .arrow {
+            height: 5px;
+            filter: invert(100%);
+        }
+    }
+
+    button:first-child {
+        padding: 0;
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    button:last-child {
+        background-color: $color-light-gold;
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   SMARTPHONES (410px -> 576px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 410px) {
+    .section-home {
+    
+        header {
+            grid-template-columns: 20% 38% 42%;
+            img {
+                height: 2.5vh;
+            }
+        
+            h1 {
+                margin: 0 0 2% 15%;
+            }
+        
+            .best-quality-food {
+                top: 15%;
+                left: 35%;
+                width: 45px;
+            }
+        
+            button {
+                font-size: .5rem;
+        
+                span {
+                    img {
+                        width: 7px;
+                    }
+                }
+            }
+        }
+    
+    
+        .section-home header nav {
+        
+            ul {
+                grid-template-columns: repeat(5, 20%);
+        
+                li {
+                    font-size: .5rem;
+                    .arrow-menu {
+                        height: 7px;
+                    }
+                }
+            }
+        }
+    
+        .section-home header div {
+            padding-right: 0;
+        
+            button {
+                width: fit-content;
+                font-size: .5rem;
+        
+                .phone {
+                    height:  7px;
+                }
+                .arrow {
+                    height: 7px;
+                }
+            }
+        
+            button:first-child {
+                margin-right: 3%;
+            }
+            
+            button:last-child {
+                margin-left: 1%;
+                margin-right: 2%;
+            }
+        }
+    }
+}
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (576px -> 768px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 576px) {
+    .section-home {
+
+        header {
+            grid-template-columns: 20% 38% 42%;
+            height: 8vh;
+        
+            img {
+                height: 3.5vh;
+            }
+        }
+    
+        h1 {
+            margin: 3% 0 2% 15%;
+        }
+    
+        .best-quality-food {
+            top: 20%;
+            left: 35%;
+            width: 55px;
+        }
+    
+        button {
+            font-size: .6rem;
+        }
+    }
+    
+    .section-home header nav {
+    
+        ul {
+            grid-template-columns: repeat(5, 20%);
+    
+            li {
+                font-size: .7rem;
+                .arrow-menu {
+                    height: 7px;
+                }
+            }
+        }
+    }
+    
+    .section-home header div {
+        padding-right: 0;
+    
+        button {
+            width: fit-content;
+            font-size: .6rem;
+    
+            .phone {
+                height:  7px;
+            }
+            .arrow {
+                height: 7px;
+            }
+        }
+    
+        button:first-child {
+            margin-right: 3%;
+            span {
+                margin-right: 5px;
+            }
+        }
+        
+        button:last-child {
+            margin-left: 3%;
+            background-color: $color-light-gold;
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (768px -> 992px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 768px) {
+    .section-home {
+
+        header {
+            height: 10vh;
+        
+            img {
+                height: 4vh;
+            }
+        }
+    
+        h1 {
+            font-size: 6vmin;
+            margin: 3% 0 3% 15%;
+        }
+    
+        .best-quality-food {
+            // top: 15%;
+            left: 35%;
+            width: 65px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            margin: 0 15% 5%;
+            font-size: .6rem;
+        }
+    }
+    
+    // .section-home header nav {
+    
+    //     ul {
+    //         grid-template-columns: repeat(5, 20%);
+    //     }
+    // }
+    
+    .section-home header div {
+        justify-content: flex-end;
+        padding-right: 5%;
+    
+        button {
+            padding: 10px 20px;
+        }
+    }
+}
+
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   TABLETTES (992px -> 1024px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+@media only screen and (min-width: 992px) {
+    .section-home {
+
+        header {
+            height: 10vh;
+            
+            img {
+                height: 5vh;
+            }
+        }
+    
+        h1 {
+            font-size: 8vmin;
+            margin: 3% 0 2% 15%;
+        }
+    
+        .best-quality-food {
+            top: 20%;
+            left: 35%;
+            width: 65px;
+        }
+    
+        button {
+            padding: 10px 20px ;
+            font-size: .9rem;
+            span {
+                padding-left: 8px;
+                img {
+                    height: 10px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+    
+    .section-home header nav {
+    
+        ul {
+            li {
+                font-size: .9rem;
+                .arrow-menu {
+                    height: 10px;
+                }
+            }
+        }
+    }
+    
+    .section-home header div {
+        button {
+            font-size: .9rem;
+            .phone {
+                height: 10px;
+                width: 10px;
+            }
+            .arrow {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+}
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   ORDINATEURS (1200px -> 1600px)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 1200px) {
+    .section-home {
+
+        header {
+            height: 10vh;
+            
+            img {
+                height: 5vh;
+            }
+        }
+    
+        h1 {
+            font-size: 9vmin;
+            margin: 3% 0 2% 15%;
+        }
+    
+        .best-quality-food {
+            top: 20%;
+            left: 35%;
+            width: 65px;
+        }
+    
+        button {
+            padding: 10px 20px ;
+            font-size: .9rem;
+            span {
+                padding-left: 8px;
+                img {
+                    height: 10px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+    
+    .section-home header nav {
+    
+        ul {
+            li {
+                font-size: .9rem;
+                .arrow-menu {
+                    height: 10px;
+                }
+            }
+        }
+    }
+    
+    .section-home header div {
+        button {
+            font-size: .9rem;
+            .phone {
+                height: 10px;
+                width: 10px;
+            }
+            .arrow {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                   ORDINATEURS (1600px -> )
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@media only screen and (min-width: 1600px) {
+    .section-home {
+
+        header {
+            height: 10vh;
+            
+            img {
+                height: 5vh;
+            }
+        }
+    
+        h1 {
+            font-size: 15vmin;
+            margin: 4% 0 5% 15%;
+        }
+    
+        .best-quality-food {
+            top: 20%;
+            left: 35%;
+            width: 90px;
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            span {
+                padding-left: 8px;
+                img {
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+        }
+    }
+    
+    .section-home header nav {
+    
+        ul {
+            li {
+                font-size: 1rem;
+                .arrow-menu {
+                    height: 10px;
+                }
+            }
+        }
+    }
+    
+    .section-home header div {
+        button {
+            font-size: 1rem;
+            .phone {
+                height: 13px;
+                width: 13px;
+            }
+            .arrow {
+                height: 13px;
+                width: 13px;
+            }
+        }
+    }
+}
