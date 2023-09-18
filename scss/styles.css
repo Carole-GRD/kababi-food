@@ -361,7 +361,7 @@ h4, .section-menu .container-title h4, .section-about .container-title h4, .sect
 
 .section-home {
   position: relative;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url("../../images/slider/img_bg_slider_home01.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7) 25%, rgba(255, 255, 255, 0)), url("../images/slider/img_bg_slider_home01.jpg");
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center;
